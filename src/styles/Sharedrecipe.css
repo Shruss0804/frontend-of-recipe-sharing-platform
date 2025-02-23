@@ -1,0 +1,79 @@
+.shared-recipes {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .shared-recipes h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .shared-recipes form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .shared-recipes input,
+  .shared-recipes textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .shared-recipes input:focus,
+  .shared-recipes textarea:focus {
+    border: 2px solid #ff6600;
+    outline: none;
+  }
+  
+  .shared-recipes textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .shared-recipes button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .shared-recipes button:hover {
+    background: #e65c00;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .shared-recipes {
+      max-width: 90%;
+    }
+  }
+  
